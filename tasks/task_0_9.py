@@ -8,4 +8,4 @@ def vowel_detector(word):
                 detector = detector + ", "+ vowel  
             else:
                 detector = detector + vowel 
-    print("Common Letters:", detector)
+    print("Vowels: ", detector)
