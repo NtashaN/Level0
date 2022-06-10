@@ -1,12 +1,14 @@
 def time_converter(num):
-    if (num//60) !=1 and num%60 != 1:
-        return str(num//60) + ' hours, ' + str(num%60) + ' minutes'
+    hours = num//60
+    minutes = num%60
+    if (hours) !=1 and minutes != 1:
+        return str(hours) + ' hours, ' + str(minutes) + ' minutes'
 
-    elif (num//60) !=1 and (num%60) == 1:
-        return str(num//60) + ' hours, ' + str(num%60) + ' minute'
+    elif (hours) !=1 and (minutes) == 1:
+        return str(hours) + ' hours, ' + str(minutes) + ' minute'
 
-    elif (num//60) == 1 and (num%60) == 1:
-        return str(num//60) + ' hour, ' + str(num%60) + ' minute'
+    elif (hours) == 1 and (minutes) == 1:
+        return str(hours) + ' hour, ' + str(minutes) + ' minute'
 
-    elif (num//60) == 1 and (num%60) != 1:
-        return str(num//60) + ' hour, ' + str(num%60) + ' minutes'
+    elif (hours) == 1 and (minutes) != 1:
+        return str(hours) + ' hour, ' + str(minutes) + ' minutes'
